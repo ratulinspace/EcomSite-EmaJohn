@@ -17,7 +17,7 @@ const Shop = () => {
     }, [])
 
 
-    useEffect(() => {
+    /* useEffect(() => {
         const storedCart = getStordedCart();
 
         const saveCart = [];
@@ -31,14 +31,49 @@ const Shop = () => {
             }
         }
         setCart(saveCart);
+    }, [products]); 
+     ||    ||    ||
+     ||    ||    ||
+     ||    ||    ||
+     ||    ||    ||
+     ||    ||    ||
+     ||    ||    ||
+     ||    ||    ||
+     ||    ||    ||
+     ||    ||    ||
+     \/    \/    \/    */
+
+
+    useEffect(() => {
+        const storedCart = getStordedCart();
+        const saveCart = [];
+        for (const id in storedCart) {
+            const addedProduct = products.find(product => product.id === id);
+            if (addedProduct) {
+                const quantity = storedCart[id];
+                addedProduct.quantity = quantity;
+                saveCart.push(addedProduct);
+            }
+        }
+        setCart(saveCart);
     }, [products]);
 
 
-    const handleAddToCart = (product) => {
+    const handleAddToCart = (selcetedProduct) => {
         // console.log(product);
-        const newCart = [...cart, product];
+        let newCart = [];
+        const exists = cart.find(product => product.id === selcetedProduct.id);
+        if (!exists) {
+            selcetedProduct.quantity = 1;
+            newCart = [...cart, selcetedProduct];
+        }
+        else {
+            const rest = cart.filter(product => product.id !== selcetedProduct.id);
+            exists.quantity = exists.quantity + 1;
+            newCart = [...rest, exists];
+        }
         setCart(newCart);
-        addToDb(product.id);
+        addToDb(selcetedProduct.id);
     }
 
     return (

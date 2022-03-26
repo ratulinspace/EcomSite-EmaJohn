@@ -13,8 +13,12 @@
 .cart-container{
     margin: 3px;
     background-color: #f9ffa57a;
+    position: sticky;
+    top: 20px;
+    /* padding: 30px 20px; */
+    height: 450px;
     padding: 15px;
-    border: 1px dotted lightgray;
+    border: 1px dotted rgb(102, 102, 102);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
@@ -27,6 +31,6 @@
 @media screen and (max-width: 600px){
      .products-container{
          grid-template-columns: repeat(1, 1fr);
-         size: 1/3;
+         size: 1/2;
      }
 }
