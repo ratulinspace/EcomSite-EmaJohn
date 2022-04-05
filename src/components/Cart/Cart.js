@@ -18,12 +18,12 @@ const Cart = (props) => {
 
     return (
         <div className='cart'>
-            <h2 style={{ textAlign: 'center' }}>Order Summary</h2>
-            <p>Selected Items: {quantity}</p>
-            <p>Total Price: ${total}</p>
-            <p>Total Shipping Charge: ${shipping}</p>
-            <p>Tax: ${tax}</p>
-            <h3>Grand Total: ${grandTotal.toFixed(2)}</h3>
+            <h3 style={{ textAlign: 'center' }}>Order Summary</h3>
+            <h4>Selected Items: {quantity}</h4>
+            <h4>Total Price: ${total}</h4>
+            <h4>Total Shipping Charge: ${shipping}</h4>
+            <h4><small>Tax: ${tax}</small></h4>
+            <h4>Grand Total: ${grandTotal.toFixed(2)}</h4>
         </div>
     );
 };
