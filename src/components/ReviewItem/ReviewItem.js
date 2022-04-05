@@ -1,14 +1,32 @@
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './ReviewItem.css';
 
 const ReviewItem = (props) => {
 
-    const { name, price, shipping, quantity } = props.product;
+    const { product, handleRemoveProduct } = props;
+
+    const { name, img, price, shipping, quantity } = props.product;
 
     return (
-        <div>
-            <h3>Review section</h3>
-            <h4>{name}</h4>
+        <div className='review-item'>
+            <div>
+                <img src={img} alt="" />
+            </div>
+            <div className='review-item-details-container'>
+                <div className="review-item-details">
+                    <p className='product-name' title={name}>
+                        {name.length > 20 ? name.slice(0, 20) + '...' : name}
+                    </p>
+                    <p>Price: <span className='orange-clr'>${price}</span></p>
+                    <p><small>Shipping : ${shipping}</small></p>
+                    <p><small>Quantity: {quantity}</small></p>
+                </div>
+                <div className="delete-container">
+                    <button onClick={() => handleRemoveProduct(product)} className='delete-btn'><FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon></button>
+                </div>
+            </div>
         </div>
     );
 };
