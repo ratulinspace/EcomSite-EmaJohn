@@ -1,18 +1,30 @@
 import React from 'react';
 import useCart from '../hooks/useCart';
 import useProducts from '../hooks/useProducts';
+import Cart from '../Cart/Cart'
 import './Order.css'
+import ReviewItem from '../ReviewItem/ReviewItem';
 
 const Orders = () => {
 
     const [products, setProducts] = useProducts();
 
-    const [cart, setCart] = useCart(products);
+    const [cart] = useCart(products);
 
     return (
-        <div>
-            <h2 style={{ textAlign: 'center', fontFamily: 'Trebuchet MS' }}>Items in num: {products.length}</h2>
-            <p>Cart has : {cart.length}</p>
+        <div className='shop-container'>
+            <div className='product-container'>
+                {
+                    cart.map(product => <ReviewItem
+                        key={product.id}
+                        product={product}
+                    ></ReviewItem>)
+                }
+            </div>
+            <div className='cart-container'>
+                <Cart cart={cart}></Cart>
+            </div>
+
         </div>
     );
 };
