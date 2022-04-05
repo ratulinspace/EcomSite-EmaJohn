@@ -17,8 +17,8 @@
     top: 20px;
     padding: 20px;
     border: 1px solid rgb(226, 226, 226);
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
 }
 
 @media screen and (max-width: 1100px) {

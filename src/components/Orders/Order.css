@@ -1,0 +1,18 @@
+.review-items-container {
+    margin: 0 auto;
+}
+
+.black-btn {
+    background-color: #242B2E;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: 1px solid #242B2E;
+    border-radius: 5px;
+}
+
+.black-btn:hover {
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid lightgray;
+}
