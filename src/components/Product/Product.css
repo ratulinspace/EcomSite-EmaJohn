@@ -1,4 +1,4 @@
-.product img{
+.product img {
     width: 286px;
     height: 286px;
     border-radius: 8px;
@@ -13,16 +13,16 @@
     position: relative;
 }
 
-.product-info{
+.product-info {
     margin: 0 14px;
 }
 
-.product-info p{
+.product-info p {
     margin-bottom: 0;
     margin-top: 5px;
 }
 
-.product-name{
+.product-name {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -30,7 +30,7 @@
     margin-top: 7px;
 }
 
-.btn-cart{
+.btn-cart {
     width: 100%;
     /* color: white; */
     background-color: #f9ffa5;
@@ -40,7 +40,7 @@
     bottom: 0;
 }
 
-.btn-cart:hover{
+.btn-cart:hover {
     background-color: #242B2E;
     color: white;
 }

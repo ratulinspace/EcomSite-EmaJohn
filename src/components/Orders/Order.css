@@ -3,20 +3,21 @@
 }
 
 .cart-container {
-    background-color: #130f40;
-    color: aliceblue;
+    background-color: whitesmoke;
 }
 
 .black-btn {
-    background-color: aliceblue;
+    background-color: #120E43;
+    color: white;
     width: 100%;
     padding: 10px;
-    border: 1px solid #242B2E;
+    border: 1px solid #120E43;
     border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .black-btn:hover {
-    background-color: lightgray;
-    color: black;
-    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    color: darkblue;
+    border: 1px solid lightgrey;
 }
