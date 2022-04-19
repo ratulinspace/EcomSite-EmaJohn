@@ -1,7 +1,7 @@
-.header{
+.header {
     height: 70px;
-    background-color: #242B2E;
-    width:auto;
+    background-color: #130f40;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,13 +9,13 @@
     padding-right: 140px;
 }
 
-.header a{
+.header a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 16px;
     margin-left: 36px;
 }
 
-.header a:hover{
+.header a:hover {
     color: orange;
 }

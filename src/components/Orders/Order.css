@@ -2,17 +2,21 @@
     margin: 0 auto;
 }
 
+.cart-container {
+    background-color: #130f40;
+    color: aliceblue;
+}
+
 .black-btn {
-    background-color: #242B2E;
+    background-color: aliceblue;
     width: 100%;
-    color: white;
     padding: 10px;
     border: 1px solid #242B2E;
     border-radius: 5px;
 }
 
 .black-btn:hover {
-    background-color: aliceblue;
+    background-color: lightgray;
     color: black;
     border: 1px solid lightgray;
 }
