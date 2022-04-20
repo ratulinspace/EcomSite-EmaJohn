@@ -4,9 +4,9 @@ import "./Login.css";
 
 const Login = () => {
     return (
-        <div className='form-container'>
+        <div className='form-container p-3'>
             <div>
-                <h2 className='form-title'>Login</h2>
+                <h2 className='form-title mt-4'>Login</h2>
                 <form action="">
                     <div className="input-group">
                         <label htmlFor="Email">Email</label>

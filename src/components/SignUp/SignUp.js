@@ -44,9 +44,9 @@ const SignUp = () => {
     }
 
     return (
-        <div className='form-container'>
+        <div className='form-container p-3'>
             <div>
-                <h2 className='form-title'>Sign Up</h2>
+                <h2 className='form-title mt-4'>Sign Up</h2>
                 <form onSubmit={handleCreateUser}>
                     <div className="input-group">
                         <label htmlFor="Email">Email</label>
