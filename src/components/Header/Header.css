@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 140px;
-    padding-right: 140px;
+    padding-right: 80px;
+    z-index: -1;
 }
 
 .header a {
@@ -18,4 +19,49 @@
 
 .header a:hover {
     color: orangered;
+}
+
+#menu-icon {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .nav-items-sm {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #logo {
+        margin-top: 15px;
+        height: 40px;
+    }
+
+    .nav-items-sm a {
+        margin: 20px 0;
+    }
+
+    .header {
+        height: auto;
+        width: 100vw;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .nav-items-lg {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+        z-index: 999;
+        margin-top: 20px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+    }
 }
